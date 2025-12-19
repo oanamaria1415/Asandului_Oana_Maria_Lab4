@@ -6,9 +6,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="PricePredictionModel.mbconfig" />
+    <None Remove="Views\Duration\PricePredictionModel.mlnet" />
     <None Remove="Views\Prediction\PricePredictionModel.mlnet" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\Duration\PricePredictionModel.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Prediction\PricePredictionModel.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
