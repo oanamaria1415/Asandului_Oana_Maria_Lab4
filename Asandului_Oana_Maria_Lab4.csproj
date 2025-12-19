@@ -5,6 +5,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="PricePredictionModel.mbconfig" />
+    <None Remove="Views\Prediction\PricePredictionModel.mlnet" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Prediction\PricePredictionModel.mlnet">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Microsoft.ML" Version="4.0.0" />
     <PackageReference Include="Microsoft.ML.LightGbm" Version="4.0.0" />
     <PackageReference Include="Plotly.NET" Version="3.0.1" />
@@ -13,5 +22,8 @@
     <None Include="PricePredictionModel.mlnet">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="PricePredictionModel.mbconfig" />
   </ItemGroup>
 </Project>
